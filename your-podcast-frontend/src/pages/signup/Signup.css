@@ -1,0 +1,206 @@
+button,
+input {
+  z-index: 1;
+  border: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 20px;
+  outline: none;
+}
+
+@keyframes music {
+  100% {
+    translate: -20 -20;
+    scale: 1 1.5;
+  }
+}
+.music {
+  position: fixed;
+  top: 55;
+  left: 0;
+  height: 1700px;
+  width: 1300px;
+  transform: translate(0%, -50%);
+  animation: music 5s infinite linear;
+}
+
+.container__signup {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  padding: 80px 80px;
+  background: #000000;
+}
+.container__signup > h2 {
+  margin: 0 0 10px 8px;
+  color: rgb(255 255 255/96%);
+}
+
+.container__signup > h3 {
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.form__signup {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.textbox__signup {
+  position: relative;
+  margin-bottom: 16px;
+}
+.textbox__signup span {
+  position: absolute;
+  top: 35%;
+  translate: 0, -50%;
+  left: 0;
+  font-size: 22px;
+  pointer-events: none;
+  color: rgb(255 255 255/40%);
+}
+.textbox__signup input {
+  padding: 0 24px 0 36px;
+  border-bottom: 2px solid #2b3442;
+  color: rgb(255 255 255/96%);
+  height: 50px;
+}
+input:focus {
+  border-color: #3f0264;
+}
+:is(input:focus, input:valid) ~ span {
+  color: rgb(255 255 255/96%);
+}
+
+.textbox__signup label {
+  position: absolute;
+  top: 55%;
+  left: 36px;
+  translate: 0 -50%;
+  color: rgb(255 255 255/40%);
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+:is(input:focus, input:valid) ~ label {
+  translate: -40px -40px;
+  scale: 0.875;
+}
+
+input:focus ~ label {
+  color: #a85feb;
+}
+
+.submit__btn__signup {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 24px;
+  border-radius: 6px;
+  background: #2e024a;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-weight: 600;
+}
+/* .submit__btn__signup:hover {
+  background-color: rgb(71, 38, 81);
+  cursor: pointer;
+} */
+
+.bottom__text__signup {
+  color: #778395;
+}
+
+.container__signup p > a {
+  color: #a85feb;
+}
+.btn__secondary__signup {
+  position: relative;
+  cursor: pointer;
+  color: #f9f9f9;
+  font-family: inherit;
+}
+/* .btn__secondary__signup:hover {
+  background-color: rgb(71, 38, 81);
+  cursor: pointer;
+} */
+
+/* Styles for screens with a width of 768px or greater */
+@media only screen and (min-width: 768px) {
+  .container__signup {
+    width: 40%;
+    padding: 80px;
+  }
+}
+
+/* Styles for screens with a width of 480px or greater */
+@media only screen and (min-width: 480px) {
+  .container__signup {
+    width: 60%;
+    padding: 60px;
+  }
+}
+
+/* Styles for screens with a width of 320px or greater */
+@media only screen and (min-width: 320px) {
+  .container__signup {
+    width: 80%;
+    padding: 40px;
+  }
+
+  .textbox__signup input {
+    padding: 0 16px 0 28px;
+  }
+
+  .textbox__signup span {
+    font-size: 18px;
+  }
+
+  .submit__btn__signup {
+    padding: 0 16px;
+    font-size: 18px;
+  }
+
+  .container__signup > h2 {
+    font-size: 24px;
+  }
+
+  .container__signup > h3 {
+    font-size: 18px;
+  }
+}
+
+/* Styles for screens with a width of 1024px or greater */
+/* @media only screen and (min-width: 1024px) {
+  .container__signup {
+    width: 30%;
+    padding: 100px;
+  }
+  
+  .textbox__signup input {
+    padding: 0 30px 0 42px;
+  }
+  
+  .submit__btn__signup {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  
+  .container__signup > h2 {
+    font-size: 28px;
+  }
+  
+  .container__signup > h3 {
+    font-size: 22px;
+  }
+} */

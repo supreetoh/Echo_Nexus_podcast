@@ -1,0 +1,82 @@
+.container__dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.sub__container__dashboard__one {
+  flex: 1;
+  margin-right: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub__container__dashboard__one h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.sub__container__dashboard__one span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub__container__dashboard__one input,
+.sub__container__dashboard__one select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+.sub__container__dashboard__one select {
+  cursor: pointer;
+}
+
+.sub__container__dashboard__one span {
+  color: red;
+  font-size: 14px;
+}
+
+.add__podcast__btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sub__container__dashboard__two {
+  flex: 1;
+}
+
+.sub__container__dashboard__two video,
+.sub__container__dashboard__two audio {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  outline: none;
+}
+
+.sub__container__dashboard__two img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
